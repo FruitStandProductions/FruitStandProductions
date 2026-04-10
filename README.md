@@ -11,13 +11,13 @@ https://fruitstandproductions.github.io/FruitStandProductions/
 ---
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-in%20development-orange.svg)
-![Build](https://img.shields.io/badge/build-static%20v1.1-green.svg)
+![Build](https://img.shields.io/badge/build-static%20v1.5-green.svg)
 ![Deployment](https://img.shields.io/badge/deployment-active-green.svg)
 ![Type](https://img.shields.io/badge/type-web%20platform-purple.svg)
 ---
 🚧 Evolving from static site → structured web platform  
 🎧 Music • Design • Digital Identity  
-🌐 Live V1 deployment active
+🌐 Live V1.5 deployment active
 
 </div>
 ---
