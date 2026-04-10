@@ -22,6 +22,15 @@ body {
   100% {background-position: 0%;}
 }
 
+/* 🌌 subtle glow overlay (NEW) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(255,0,0,0.15), transparent 60%);
+  z-index: -1;
+}
+
 /* PARTICLES */
 #particles {
   position: fixed;
@@ -64,29 +73,41 @@ body {
 /* TEXT */
 h1 {
   font-size: 28px;
+  letter-spacing: 1px;
 }
 
 .tag {
-  opacity: 0.7;
+  opacity: 0.75;
   margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
-/* CARDS */
+/* CARDS (UPGRADED) */
 .card {
-  background: rgba(0,0,0,0.6);
-  padding: 20px;
+  background: rgba(10, 0, 0, 0.55);
+  border: 1px solid rgba(255, 0, 0, 0.25);
+
+  padding: 22px;
   margin: 20px 0;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
+  border-radius: 18px;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.08);
+
+  transition: 0.35s ease;
+
+  animation: floatIn 0.6s ease both;
 }
 
+/* CARD HOVER (UPGRADED) */
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(255,0,0,0.6);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.25);
 }
 
-/* BUTTON BOXES (FIXED) */
+/* BUTTON BOXES */
 .buttons {
   display: flex;
   flex-direction: column;
@@ -96,21 +117,24 @@ h1 {
 
 .buttons a {
   display: block;
-  padding: 12px;
+  padding: 12px 14px;
   border-radius: 12px;
   text-decoration: none;
   color: white;
   text-align: center;
 
-  background: linear-gradient(90deg, #ff1a1a, #800000);
-  border: 1px solid rgba(255, 0, 0, 0.3);
+  background: linear-gradient(135deg, #ff1a1a, #4d0000);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
-  transition: 0.25s;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+
+  transition: 0.25s ease;
 }
 
 .buttons a:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px red;
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.35);
 }
 
 /* REVEAL */
@@ -137,7 +161,19 @@ h1 {
   }
 }
 
-/* 🔥 MOBILE FIXES */
+/* CARD ENTRY ANIMATION (NEW) */
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  MOBILE FIXES */
 @media (max-width: 768px) {
   .container {
     padding: 15px;
