@@ -1,0 +1,20 @@
+Fruit Stand Productions — Brand Usage License
+
+Copyright (c) 2026 Fruit Stand Productions. All rights reserved.
+
+This license applies to all brand identity materials associated with Fruit Stand Productions, including but not limited to:
+
+- The name "Fruit Stand Productions"
+- Logos and visual identity
+- Brand marks, symbols, and stylized text
+- Website branding elements and design identity
+- Artwork, graphics, and promotional media
+
+These materials are NOT covered under the MIT License applied to this repository.
+
+You may NOT copy, modify, distribute, or reuse any Fruit Stand Productions branding or identity assets without explicit written permission.
+
+Permitted use:
+- Viewing for personal or informational purposes only when accessing official Fruit Stand Productions platforms.
+
+Any unauthorized use of branding assets may result in takedown requests or legal action.
