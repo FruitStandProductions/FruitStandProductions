@@ -81,12 +81,14 @@ A full creative ecosystem for music and digital content:
 ---
 
 # Licensing & Intellectual Property
+This project uses a dual-license structure:
 
-This project uses a split licensing model:
-- MIT License (codebase)
-- Proprietary license (brand assets)
+- **Source Code:** Licensed under the [MIT License](./LICENSE)
+- **Brand Identity & Assets:** Protected under a separate brand license
 
-See full license file here: [LICENSE](LICENSE)
+All branding materials associated with Fruit Stand Productions — including the name, logo, visual identity, and related assets — are not covered under the MIT License.
+View full brand terms here: [BRAND-LICENSE](./BRAND-LICENSE.txt)
+
 
 ---
 
