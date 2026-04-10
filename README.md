@@ -50,7 +50,6 @@ A hybrid creative system combining:
 ## Current Focus
 
 - Live static website (V1.5)
-- UI + particle animation system
 - Branding and identity development
 - Foundational architecture for future expansion
 
@@ -72,7 +71,7 @@ A full creative ecosystem for music and digital content:
 
 | Layer         | Status            |
 |--------------|------------------|
-| Web Platform | Live (V1 Static) |
+| Web Platform | Live (V1.5 Static) |
 | UI System    | Active           |
 | Deployment   | Active           |
 | CI/CD        | Not configured   |
@@ -80,12 +79,10 @@ A full creative ecosystem for music and digital content:
 ---
 
 ## Roadmap
+-Expand platform capabilities  
 
-- Stabilize V1 static structure  
-- Improve UI consistency  
-- Add structured content system  
-- Implement deployment automation  
-- Expand platform capabilities  
+- Phase 2-5
+
 
 ---
 
