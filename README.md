@@ -15,9 +15,9 @@ https://fruitstandproductions.github.io/FruitStandProductions/
 ![Deployment](https://img.shields.io/badge/deployment-active-green.svg)
 ![Type](https://img.shields.io/badge/type-web%20platform-purple.svg)
 ---
-🚧 Evolving from static site → structured web platform  
-🎧 Music • Design • Digital Identity  
-🌐 Live V1.5 deployment active
+Evolving from static site → structured web platform  
+ Music • Design • Digital Identity  
+ Live V1.5 deployment active
 
 </div>
 ---
@@ -32,12 +32,12 @@ This repository forms the foundation for:
 
 ---
 
-## 🎯 What This Is
+## What This Is
 
 A hybrid between:
-- 🎧 Music label
-- 🌐 Creative web platform
-- 🧠 Experimental digital brand system
+-  Music label
+- Creative web platform
+- Experimental digital brand system
 
 ---
 
@@ -59,7 +59,7 @@ A full creative ecosystem for music and digital content:
 - Submission + discovery tools
 
 ---
-# 📊 Project Status
+# Project Status
 
 | Layer | Status |
 |------|--------|
@@ -80,7 +80,7 @@ A full creative ecosystem for music and digital content:
 
 ---
 
-# 🔐 Licensing & Intellectual Property
+# Licensing & Intellectual Property
 
 This project uses a split licensing model:
 - MIT License (codebase)
@@ -104,7 +104,7 @@ Subject to MIT license terms.
 
 ---
 
-## 🚫 Brand Assets (All Rights Reserved)
+## Brand Assets (All Rights Reserved)
 
 The following are NOT covered by the MIT License:
 
@@ -118,9 +118,9 @@ The following are NOT covered by the MIT License:
 
 ---
 
-# 📬 Contact
+# Contact
 
-📧 Email: fruitstandproductions1@outlook.com
+Email: fruitstandproductions1@outlook.com
 
 ---
 
