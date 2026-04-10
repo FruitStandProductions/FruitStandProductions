@@ -1,6 +1,6 @@
 
 // ==========================
-//  PARTICLES SYSTEM (RESPONSIVE)
+// 🌌 PARTICLES SYSTEM
 // ==========================
 
 const canvas = document.getElementById("particles");
@@ -16,12 +16,11 @@ function resizeCanvas() {
 
 window.addEventListener("resize", () => {
   resizeCanvas();
-  initParticles(); //  rebuild particles on resize
+  initParticles();
 });
 
 resizeCanvas();
 
-// create particles
 function initParticles() {
   particles = [];
   particleCount = window.innerWidth < 768 ? 40 : 80;
@@ -45,8 +44,6 @@ function animate() {
   particles.forEach(p => {
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-
-    // 🔥 soft red glow particles
     ctx.fillStyle = "rgba(255,0,0,0.6)";
     ctx.fill();
 
@@ -64,7 +61,7 @@ animate();
 
 
 // ==========================
-//  CURSOR (DESKTOP ONLY)
+// 🖱️ CURSOR
 // ==========================
 
 const cursor = document.querySelector(".cursor");
@@ -80,7 +77,7 @@ if (window.matchMedia("(pointer: fine)").matches) {
 
 
 // ==========================
-//  SCROLL REVEAL (STABLE)
+// 👀 SCROLL REVEAL
 // ==========================
 
 const reveals = document.querySelectorAll(".reveal");
@@ -91,36 +88,30 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add("active");
     }
   });
-}, {
-  threshold: 0.1
-});
+}, { threshold: 0.1 });
 
 reveals.forEach(el => observer.observe(el));
 
 
 // ==========================
-//  APP NAVIGATION (NEW)
+// 🧭 NAVIGATION
 // ==========================
 
 document.querySelectorAll(".nav a").forEach(link => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const targetId = link.getAttribute("href");
-    const target = document.querySelector(targetId);
+    const target = document.querySelector(link.getAttribute("href"));
 
     if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+      target.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
 
 
 // ==========================
-//  CLICK TRACKING (DEBUG)
+// 🔗 CLICK DEBUG
 // ==========================
 
 document.querySelectorAll("a").forEach(link => {
