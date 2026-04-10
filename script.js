@@ -1,1 +1,3 @@
-console.log("Website loaded");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Fruit Stand Productions site loaded");
+});
