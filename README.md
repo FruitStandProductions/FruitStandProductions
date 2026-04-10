@@ -2,80 +2,109 @@
 
 # 🍉 Fruit Stand Productions
 
-### A Small digital music label & creative platform
+### Digital Music Label • Creative Platform • Experimental Web Project
 
 ---
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-in%20development-orange.svg)
-![Build](https://img.shields.io/badge/build-not%20set-lightgrey.svg)
-![Deployment](https://img.shields.io/badge/deployment-not%20active-lightgrey.svg)
-![Repo Type](https://img.shields.io/badge/type-static%20web%20project-blue.svg)
+![Build](https://img.shields.io/badge/build-static%20v1-green.svg)
+![Deployment](https://img.shields.io/badge/deployment-active-green.svg)
+![Type](https://img.shields.io/badge/type-web%20platform-purple.svg)
 
 ---
 
-🚧 This project is currently under active development  
-🎧 Building a digital music label platform  
-🌐 Deployment and CI/CD coming soon
+🚧 Actively in development — evolving from static site → full web platform  
+🎧 Focused on electronic music, visual identity, and digital branding  
+🌐 Live static deployment active (V1)
 
 </div>
 
 ---
 
-# Overview
+# 📖 Overview
 
-Fruit Stand Productions is a developing digital music label platform focused on building a scalable web presence for artists, music content, and brand identity.
+Fruit Stand Productions is a developing digital music label platform focused on building a scalable web presence for artists, releases, and creative identity.
 
-This repository serves as the foundation for both current static assets and future system expansion.
+This repository serves as the foundation for:
+- current live static website
+- experimental design system
+- future full web application
 
 ---
 
-# Usage & Development
+# ⚙️ Usage & Development
 
-This is a static-first web project currently in development.
+This is a static-first web project currently in production use.
 
-### Current State
-- Static HTML/CSS/JS structure
-- Production Live
+---
 
-### Planned Direction
+## 📌 Current State
+- Static HTML / CSS / JavaScript website
+- Live deployment active (GitHub Pages or similar)
+- Neon-themed UI with particle animation system
+- Manual updates via Git workflow
+
+---
+
+## 🚀 Planned Direction
+
 - React + Vite migration (V2)
-- CI/CD pipeline with GitHub Actions
-- GitHub Pages deployment setup
+- Component-based UI architecture
+- CI/CD pipeline (GitHub Actions)
+- Automated deployment system
+- Scalable music/artist content system
 
 ---
 
-# Architecture (Planned Evolution)
+# 🧠 Architecture (Planned Evolution)
 
-### V1 (Current)
+## 🧱 V1 — Current (Static System)
 - Custom HTML/CSS/JavaScript
 - Static media integration
 - Manual updates
+- Simple deployment workflow
 
-### V2 (In Progress)
+---
+
+## ⚙️ V2 — In Progress (Modern Web App)
 - React + Vite frontend
 - Modular component system
 - Audio player engine
-- Artist/release management system
-- Submission system (future)
+- Artist + release management system
+- Structured content architecture
+
+---
+
+## 🚀 V3 — Future Vision
+- Full digital label platform
+- Artist submission system
+- Backend + database integration
+- Automated release pipeline
+- Advanced CI/CD workflows
 
 ---
 
 # 🎯 Core Goals
 
-- Build a structured digital label platform
-- Centralize artist and music presentation
-- Enable scalable web infrastructure
-- Transition from static site → modern web app
+- Build a structured digital music label platform
+- Centralize artists, releases, and creative identity
+- Create a scalable modern web infrastructure
+- Evolve from static site → full web application
 
 ---
 
 # 🔐 Licensing & Intellectual Property
 
 This project uses a split licensing model:
-under the MIT License and proprietary license
+- MIT License (codebase)
+- Proprietary license (brand assets)
 
-See the full license here: [MIT License](LICENSE)
+See full license file here: [LICENSE](LICENSE)
+
+---
+
+## 📄 Code License (MIT)
 
 The code in this repository is licensed under the MIT License.
 
@@ -89,48 +118,49 @@ Subject to MIT license terms.
 
 ---
 
-## Brand Assets (All Rights Reserved)
+## 🚫 Brand Assets (All Rights Reserved)
 
 The following are NOT covered by the MIT License:
 
 - Fruit Stand Productions name
-- Logos and brand identity (fruit-themed visuals)
-- Graphics, design assets, and artwork
+- Logos and brand identity
+- Graphics, visual design assets
+- Artwork and branding materials
 - Audio files and music content
 
-All rights reserved © 2026 Fruit Stand Productions.
+© 2026 Fruit Stand Productions. All rights reserved.
 
 ---
 
-# 📄 Project Status
+# 📊 Project Status
 
 | Component | Status |
 |----------|--------|
-| Website | Not deployed |
+| Website | Live (static) |
 | CI/CD | Not configured |
-| Versioning | Not established |
+| Versioning | Basic |
 | V2 System | In development |
 | Repository | Active |
 
 ---
 
-# Roadmap
+# 🛣️ Roadmap
 
 - Stabilize V1 static structure
-- Begin React/Vite migration
+- Improve UI/UX consistency
+- Begin React + Vite migration
 - Implement GitHub Actions CI/CD
-- Prepare deployment pipeline
-- Expand into full label platform (V2)
+- Build scalable label platform (V2)
 
 ---
 
 # 📬 Contact
 
-- Email: fruitstandproductions1@outlook.com
+📧 fruitstandproductions1@outlook.com
 
 ---
 
 # 📜 License Summary
 
-- Code: MIT License
+- Code: MIT License  
 - Brand Assets: All Rights Reserved
