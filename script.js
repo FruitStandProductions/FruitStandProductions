@@ -1,4 +1,7 @@
-// PARTICLES
+// ==========================
+// 🌌 PARTICLES SYSTEM (RESPONSIVE)
+// ==========================
+
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 
@@ -12,6 +15,7 @@ function resizeCanvas() {
 
 window.addEventListener("resize", () => {
   resizeCanvas();
+  initParticles(); // 🔥 rebuild particles on resize
 });
 
 resizeCanvas();
@@ -40,6 +44,8 @@ function animate() {
   particles.forEach(p => {
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+
+    // 🔥 soft red glow particles
     ctx.fillStyle = "rgba(255,0,0,0.6)";
     ctx.fill();
 
@@ -52,10 +58,14 @@ function animate() {
 
   requestAnimationFrame(animate);
 }
+
 animate();
 
 
-// CURSOR (desktop only)
+// ==========================
+// 🖱️ CURSOR (DESKTOP ONLY)
+// ==========================
+
 const cursor = document.querySelector(".cursor");
 
 if (window.matchMedia("(pointer: fine)").matches) {
@@ -68,7 +78,10 @@ if (window.matchMedia("(pointer: fine)").matches) {
 }
 
 
-// REVEAL (more stable version)
+// ==========================
+// 👀 SCROLL REVEAL (STABLE)
+// ==========================
+
 const reveals = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver((entries) => {
@@ -84,7 +97,10 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach(el => observer.observe(el));
 
 
-// CLICK TRACKING
+// ==========================
+// 🔗 CLICK TRACKING (DEBUG)
+// ==========================
+
 document.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => {
     console.log("Clicked:", link.textContent);

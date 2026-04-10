@@ -12,23 +12,41 @@ body {
 
   background: linear-gradient(135deg, #1a0000, #3b0000, #6b0000);
   background-size: 400% 400%;
-  animation: gradientMove 10s ease infinite;
+
+  /* 🌌 base motion */
+  animation: gradientMove 10s ease infinite, softPulse 8s ease-in-out infinite;
 }
 
-/* smoother animation */
+/* 🔥 background gradient motion */
 @keyframes gradientMove {
   0% {background-position: 0%;}
   50% {background-position: 100%;}
   100% {background-position: 0%;}
 }
 
-/* 🌌 subtle glow overlay (NEW) */
+/* 🌫️ soft breathing atmosphere */
+@keyframes softPulse {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.05); }
+  100% { filter: brightness(1); }
+}
+
+/* 🌌 floating ambient movement layer */
+@keyframes backgroundFloat {
+  0% { transform: scale(1) translateY(0px); }
+  50% { transform: scale(1.03) translateY(-10px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   background: radial-gradient(circle at top, rgba(255,0,0,0.15), transparent 60%);
   z-index: -1;
+
+  /* 🌌 subtle motion layer */
+  animation: backgroundFloat 18s ease-in-out infinite;
 }
 
 /* PARTICLES */
@@ -82,7 +100,7 @@ h1 {
   letter-spacing: 0.5px;
 }
 
-/* CARDS (UPGRADED) */
+/* CARDS */
 .card {
   background: rgba(10, 0, 0, 0.55);
   border: 1px solid rgba(255, 0, 0, 0.25);
@@ -101,13 +119,14 @@ h1 {
   animation: floatIn 0.6s ease both;
 }
 
-/* CARD HOVER (UPGRADED) */
+/*  upgraded hover feel */
 .card:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 0 35px rgba(255, 0, 0, 0.25);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.35);
+  border-color: rgba(255, 0, 0, 0.5);
 }
 
-/* BUTTON BOXES */
+/* BUTTONS */
 .buttons {
   display: flex;
   flex-direction: column;
@@ -149,41 +168,20 @@ h1 {
   transform: translateY(0);
 }
 
-/* ANIM */
+/* ANIMATIONS */
 @keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* CARD ENTRY ANIMATION (NEW) */
 @keyframes floatIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/*  MOBILE FIXES */
+/*  MOBILE OPTIMIZATION */
 @media (max-width: 768px) {
-  .container {
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  .cursor {
-    display: none;
-  }
+  .container { padding: 15px; }
+  h1 { font-size: 24px; }
+  .cursor { display: none; }
 }
