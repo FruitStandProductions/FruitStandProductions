@@ -1,139 +1,145 @@
-<div align="center">
+# Fruit Stand Productions  
+### Digital Music Label & Creative Web Platform
 
- 🌐 LIVE PLATFORM
-https://fruitstandproductions.github.io/FruitStandProductions/
----
-#  Fruit Stand Productions
-
-### A Digital Music Label & Creative Web Platform
-
-#### Building the future of independent electronic music branding
----
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-in%20development-orange.svg)
-![Build](https://img.shields.io/badge/build-static%20v1.1-green.svg)
-![Deployment](https://img.shields.io/badge/deployment-active-green.svg)
-![Type](https://img.shields.io/badge/type-web%20platform-purple.svg)
----
-🚧 Evolving from static site → structured web platform  
-🎧 Music • Design • Digital Identity  
-🌐 Live V1 deployment active
+![Status](https://img.shields.io/badge/status-active%20development-orange.svg)
+![Build](https://img.shields.io/badge/build-static%20v1.5-blue.svg)
+![Deployment](https://img.shields.io/badge/deployment-github%20pages-green.svg)
+![Type](https://img.shields.io/badge/type-creative%20platform-purple.svg)
 
-</div>
+A creative digital music label and experimental web platform building independent identity, sound, and visual systems on the web.
+
 ---
-# Overview
+
+## Access
+
+Live platform: https://fruitstandproductions.github.io/FruitStandProductions/
+
+
+Explore the current build, UI system, and evolving creative structure.
+
+---
+
+## Overview
 
 Fruit Stand Productions is a digital music label platform in active development, focused on building a modern web presence for electronic music, visual identity, and independent artists.
 
-This repository forms the foundation for:
-- live static website
-- creative brand system
-- future scalable platform features
+This project serves as the foundation for a scalable creative ecosystem combining music, branding, and experimental web design.
 
 ---
 
-## 🎯 What This Is
+## What This Is
 
-A hybrid between:
-- 🎧 Music label
-- 🌐 Creative web platform
-- 🧠 Experimental digital brand system
+A hybrid creative system combining:
+
+- Music label concept  
+- Creative web platform  
+- Experimental digital brand system  
+
+---
+
+## Highlights
+
+- Experimental UI and particle system  
+- Independent music label concept in development  
+- Modular platform architecture  
+- Designed for future artist and audio integration  
 
 ---
 
 ## Current Focus
 
-- Live static website deployment
+- Live static website (V1.5)
 - UI + particle animation system
-- Branding + identity development
-- Foundational structure for future expansion
+- Branding and identity development
+- Foundational architecture for future expansion
 
 ---
 
-##  Future Vision
+## Future Vision
 
 A full creative ecosystem for music and digital content:
+
 - Artist profiles
 - Music release system
 - Audio player integration
-- Submission + discovery tools
+- Submission and discovery tools
+- Expanded platform features
 
 ---
-# 📊 Project Status
 
-| Layer | Status |
-|------|--------|
+## Project Status
+
+| Layer         | Status            |
+|--------------|------------------|
 | Web Platform | Live (V1 Static) |
-| UI System | Active |
-| Deployment | Active |
-| CI/CD | Not configured |
+| UI System    | Active           |
+| Deployment   | Active           |
+| CI/CD        | Not configured   |
 
 ---
 
-#  Roadmap
+## Roadmap
 
-- Stabilize V1 static structure
-- Improve UI consistency
-- Add structured content system
-- Implement deployment automation
-- Expand platform capabilities
-
----
-
-# 🔐 Licensing & Intellectual Property
-
-This project uses a split licensing model:
-- MIT License (codebase)
-- Proprietary license (brand assets)
-
-See full license file here: [LICENSE](LICENSE)
+- Stabilize V1 static structure  
+- Improve UI consistency  
+- Add structured content system  
+- Implement deployment automation  
+- Expand platform capabilities  
 
 ---
 
-## Code License (MIT)
+## Built With
 
-The code in this repository is licensed under the MIT License.
+HTML • CSS • JavaScript • GitHub Pages
+
+---
+
+## Licensing & Intellectual Property
+
+This project uses a dual-license structure:
+
+### Code (MIT License)
+
+The source code in this repository is licensed under the MIT License.
 
 You are free to:
 - Use
 - Modify
 - Distribute
-- Reuse in personal or commercial projects
+- Reuse in personal or commercial projects  
 
 Subject to MIT license terms.
 
+See: [LICENSE](./LICENSE)
+
 ---
 
-## 🚫 Brand Assets (All Rights Reserved)
+### Brand Identity (All Rights Reserved)
 
-The following are NOT covered by the MIT License:
+All branding and identity assets are not covered under the MIT License, including:
 
-- Fruit Stand Productions name
-- Logos and brand identity
-- Graphics, visual design assets
-- Artwork and branding materials
-- Audio files and music content
+- Fruit Stand Productions name  
+- Logos and visual identity  
+- Graphics and design assets  
+- Artwork and branding materials  
+- Audio files and music content  
+
+These remain fully owned by Fruit Stand Productions.
+
+See: [BRAND-LICENSE](./BRAND-LICENSE.txt)
 
 © 2026 Fruit Stand Productions. All rights reserved.
 
 ---
 
-# 📬 Contact
+## Contact
 
-📧 Email: fruitstandproductions1@outlook.com
-
----
-
-# Built With
-
-- HTML / CSS / JavaScript
-- Custom UI system
-- Particle animation engine
-- GitHub Pages deployment
+Email: fruitstandproductions1@outlook.com
 
 ---
 
-# 🧠 Philosophy
+## Philosophy
 
 Minimal infrastructure. Maximum creative control.  
-Built as a foundation for independent music and digital identity.
+Built for independent creative control and experimental digital identity.
