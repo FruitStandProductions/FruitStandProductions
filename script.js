@@ -1,5 +1,6 @@
+
 // ==========================
-// 🌌 PARTICLES SYSTEM (RESPONSIVE)
+//  PARTICLES SYSTEM (RESPONSIVE)
 // ==========================
 
 const canvas = document.getElementById("particles");
@@ -15,7 +16,7 @@ function resizeCanvas() {
 
 window.addEventListener("resize", () => {
   resizeCanvas();
-  initParticles(); // 🔥 rebuild particles on resize
+  initParticles(); //  rebuild particles on resize
 });
 
 resizeCanvas();
@@ -63,7 +64,7 @@ animate();
 
 
 // ==========================
-// 🖱️ CURSOR (DESKTOP ONLY)
+//  CURSOR (DESKTOP ONLY)
 // ==========================
 
 const cursor = document.querySelector(".cursor");
@@ -79,7 +80,7 @@ if (window.matchMedia("(pointer: fine)").matches) {
 
 
 // ==========================
-// 👀 SCROLL REVEAL (STABLE)
+//  SCROLL REVEAL (STABLE)
 // ==========================
 
 const reveals = document.querySelectorAll(".reveal");
@@ -98,7 +99,28 @@ reveals.forEach(el => observer.observe(el));
 
 
 // ==========================
-// 🔗 CLICK TRACKING (DEBUG)
+//  APP NAVIGATION (NEW)
+// ==========================
+
+document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const targetId = link.getAttribute("href");
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
+});
+
+
+// ==========================
+//  CLICK TRACKING (DEBUG)
 // ==========================
 
 document.querySelectorAll("a").forEach(link => {
