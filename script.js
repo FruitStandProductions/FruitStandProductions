@@ -1,25 +1,17 @@
-
 // ==========================
-// 🌌 PARTICLES SYSTEM
+// 🌌 PARTICLES SYSTEM (SMOOTH)
 // ==========================
 
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 
 let particles = [];
-let particleCount = window.innerWidth < 768 ? 40 : 80;
+let particleCount;
 
 function resizeCanvas() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 }
-
-window.addEventListener("resize", () => {
-  resizeCanvas();
-  initParticles();
-});
-
-resizeCanvas();
 
 function initParticles() {
   particles = [];
@@ -30,12 +22,18 @@ function initParticles() {
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       r: Math.random() * 2,
-      dx: (Math.random() - 0.5) * 1.2,
-      dy: (Math.random() - 0.5) * 1.2
+      dx: (Math.random() - 0.5) * 1,
+      dy: (Math.random() - 0.5) * 1
     });
   }
 }
 
+window.addEventListener("resize", () => {
+  resizeCanvas();
+  initParticles();
+});
+
+resizeCanvas();
 initParticles();
 
 function animate() {
@@ -61,7 +59,7 @@ animate();
 
 
 // ==========================
-// 🖱️ CURSOR
+// 🖱️ CURSOR (DESKTOP ONLY)
 // ==========================
 
 const cursor = document.querySelector(".cursor");
@@ -82,7 +80,7 @@ if (window.matchMedia("(pointer: fine)").matches) {
 
 const reveals = document.querySelectorAll(".reveal");
 
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add("active");
@@ -94,19 +92,15 @@ reveals.forEach(el => observer.observe(el));
 
 
 // ==========================
-// 🧭 NAVIGATION
+// 🌌 SCROLL INTENSITY SYSTEM
 // ==========================
 
-document.querySelectorAll(".nav a").forEach(link => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    const target = document.querySelector(link.getAttribute("href"));
-
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    document.body.classList.add("scrolled");
+  } else {
+    document.body.classList.remove("scrolled");
+  }
 });
 
 
