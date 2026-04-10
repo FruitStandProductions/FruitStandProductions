@@ -44,7 +44,7 @@ A hybrid between:
 ## Current Focus
 
 - Live static website deployment
-- Neon UI + particle animation system
+- UI + particle animation system
 - Branding + identity development
 - Foundational structure for future expansion
 
