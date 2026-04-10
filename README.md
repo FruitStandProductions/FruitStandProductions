@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🍉 Fruit Stand Productions
+# Fruit Stand Productions
 
 ### Digital Music Label • Creative Platform • Experimental Web Project
 
@@ -22,7 +22,7 @@
 
 ---
 
-# 📖 Overview
+# Overview
 
 Fruit Stand Productions is a developing digital music label platform focused on building a scalable web presence for artists, releases, and creative identity.
 
@@ -39,7 +39,7 @@ This is a static-first web project currently in production use.
 
 ---
 
-## 📌 Current State
+## Current State
 - Static HTML / CSS / JavaScript website
 - Live deployment active (GitHub Pages or similar)
 - Neon-themed UI with particle animation system
@@ -47,7 +47,7 @@ This is a static-first web project currently in production use.
 
 ---
 
-## 🚀 Planned Direction
+## Planned Direction
 
 - React + Vite migration (V2)
 - Component-based UI architecture
@@ -57,9 +57,9 @@ This is a static-first web project currently in production use.
 
 ---
 
-# 🧠 Architecture (Planned Evolution)
+# Architecture (Planned Evolution)
 
-## 🧱 V1 — Current (Static System)
+## V1 — Current (Static System)
 - Custom HTML/CSS/JavaScript
 - Static media integration
 - Manual updates
@@ -67,7 +67,7 @@ This is a static-first web project currently in production use.
 
 ---
 
-## ⚙️ V2 — In Progress (Modern Web App)
+## V2 — In Progress (Modern Web App)
 - React + Vite frontend
 - Modular component system
 - Audio player engine
@@ -76,7 +76,7 @@ This is a static-first web project currently in production use.
 
 ---
 
-## 🚀 V3 — Future Vision
+##  V3 — Future Vision
 - Full digital label platform
 - Artist submission system
 - Backend + database integration
@@ -85,7 +85,7 @@ This is a static-first web project currently in production use.
 
 ---
 
-# 🎯 Core Goals
+# Core Goals
 
 - Build a structured digital music label platform
 - Centralize artists, releases, and creative identity
@@ -104,7 +104,7 @@ See full license file here: [LICENSE](LICENSE)
 
 ---
 
-## 📄 Code License (MIT)
+##  Code License (MIT)
 
 The code in this repository is licensed under the MIT License.
 
@@ -132,7 +132,7 @@ The following are NOT covered by the MIT License:
 
 ---
 
-# 📊 Project Status
+# Project Status
 
 | Component | Status |
 |----------|--------|
@@ -144,7 +144,7 @@ The following are NOT covered by the MIT License:
 
 ---
 
-# 🛣️ Roadmap
+# Roadmap
 
 - Stabilize V1 static structure
 - Improve UI/UX consistency
@@ -154,9 +154,9 @@ The following are NOT covered by the MIT License:
 
 ---
 
-# 📬 Contact
+# Contact
 
-📧 fruitstandproductions1@outlook.com
+fruitstandproductions1@outlook.com
 
 ---
 
