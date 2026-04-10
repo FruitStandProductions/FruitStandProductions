@@ -33,7 +33,7 @@ body {
 }
 
 /* ==========================
- CINEMATIC LAYERS (FIXED)
+ CINEMATIC LAYERS
 ========================== */
 
 body::before {
@@ -73,7 +73,7 @@ body::after {
 }
 
 /* ==========================
- HERO SECTION
+ HERO
 ========================== */
 
 .hero {
@@ -85,32 +85,20 @@ body::after {
   position: relative;
 }
 
-/* ==========================
- HERO LOGO
-========================== */
-
 .hero-logo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-
   border: 3px solid rgba(255, 0, 0, 0.6);
   box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
-
   margin-bottom: 20px;
 
   animation: logoIntro 1.2s ease, logoFloat 4s ease-in-out infinite;
 }
 
 @keyframes logoIntro {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes logoFloat {
@@ -119,24 +107,16 @@ body::after {
   100% { transform: translateY(0px); }
 }
 
-/* ==========================
- TEXT HERO
-========================== */
-
 .hero-title {
   font-size: 42px;
   letter-spacing: 4px;
   text-shadow: 0 0 30px rgba(255,0,0,0.6);
-
-  animation: heroFade 1.5s ease;
 }
 
 .hero-sub {
   margin-top: 10px;
   opacity: 0.7;
   letter-spacing: 1px;
-
-  animation: heroFade 2s ease;
 }
 
 .scroll-indicator {
@@ -144,13 +124,7 @@ body::after {
   bottom: 30px;
   font-size: 24px;
   opacity: 0.5;
-
   animation: bounce 2s infinite;
-}
-
-@keyframes heroFade {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes bounce {
@@ -165,26 +139,6 @@ body::after {
   position: fixed;
   inset: 0;
   z-index: -2;
-}
-
-/* ==========================
- CURSOR (FIXED + SMOOTH)
-========================== */
-
-.cursor {
-  position: fixed;
-  width: 14px;
-  height: 14px;
-  background: red;
-  border-radius: 50%;
-  pointer-events: none;
-  box-shadow: 0 0 15px red;
-  z-index: 999;
-
-  /* 🔥 FIX: prevents lag/jump + improves tracking */
-  transform: translate3d(0,0,0);
-  will-change: transform;
-  transition: transform 0.05s linear;
 }
 
 /* ==========================
@@ -207,14 +161,10 @@ body::after {
 .card {
   background: rgba(10,0,0,0.55);
   border: 1px solid rgba(255,0,0,0.25);
-
   padding: 22px;
   margin: 20px 0;
   border-radius: 18px;
-
   backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-
   transition: 0.3s ease;
 }
 
@@ -239,9 +189,7 @@ body::after {
   border-radius: 12px;
   text-decoration: none;
   color: white;
-
   background: linear-gradient(135deg, #ff1a1a, #4d0000);
-
   transition: 0.25s;
 }
 
@@ -266,28 +214,10 @@ body::after {
 }
 
 /* ==========================
- SCROLL INTENSITY
-========================== */
-
-body.scrolled {
-  filter: brightness(1.1) contrast(1.05);
-}
-
-body.scrolled::after {
-  opacity: 0.85;
-}
-
-body.scrolled .card {
-  box-shadow: 0 0 50px rgba(255,0,0,0.4);
-}
-
-/* ==========================
  MOBILE
 ========================== */
 
 @media (max-width: 768px) {
-  .cursor { display: none; }
-
   .hero-title {
     font-size: 28px;
   }

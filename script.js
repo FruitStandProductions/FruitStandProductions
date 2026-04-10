@@ -1,5 +1,5 @@
 // ==========================
-// 🌌 PARTICLES SYSTEM (SMOOTH)
+//  PARTICLES SYSTEM (SMOOTH)
 // ==========================
 
 const canvas = document.getElementById("particles");
@@ -58,28 +58,11 @@ function animate() {
 animate();
 
 
-// ==========================
-// 🖱️ CURSOR (FIXED + SMOOTH)
-// ==========================
 
-const cursor = document.querySelector(".cursor");
-
-if (window.matchMedia("(pointer: fine)").matches) {
-
-  document.addEventListener("mousemove", (e) => {
-
-    // FIX: proper viewport sync (no half-page bug)
-    cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
-
-  });
-
-} else {
-  cursor.style.display = "none";
-}
 
 
 // ==========================
-// 👀 SCROLL REVEAL
+//  SCROLL REVEAL
 // ==========================
 
 const reveals = document.querySelectorAll(".reveal");
@@ -96,7 +79,7 @@ reveals.forEach(el => observer.observe(el));
 
 
 // ==========================
-// 🌌 SCROLL INTENSITY SYSTEM
+//  SCROLL INTENSITY SYSTEM
 // ==========================
 
 window.addEventListener("scroll", () => {
@@ -109,7 +92,7 @@ window.addEventListener("scroll", () => {
 
 
 // ==========================
-// 🔗 CLICK DEBUG
+//  CLICK DEBUG
 // ==========================
 
 document.querySelectorAll("a").forEach(link => {
