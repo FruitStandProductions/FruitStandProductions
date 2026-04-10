@@ -59,16 +59,20 @@ animate();
 
 
 // ==========================
-// 🖱️ CURSOR (DESKTOP ONLY)
+// 🖱️ CURSOR (FIXED + SMOOTH)
 // ==========================
 
 const cursor = document.querySelector(".cursor");
 
 if (window.matchMedia("(pointer: fine)").matches) {
-  document.addEventListener("mousemove", e => {
-    cursor.style.top = e.clientY + "px";
-    cursor.style.left = e.clientX + "px";
+
+  document.addEventListener("mousemove", (e) => {
+
+    // FIX: proper viewport sync (no half-page bug)
+    cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+
   });
+
 } else {
   cursor.style.display = "none";
 }

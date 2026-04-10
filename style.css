@@ -86,7 +86,7 @@ body::after {
 }
 
 /* ==========================
-  HERO LOGO (ADDED)
+ HERO LOGO
 ========================== */
 
 .hero-logo {
@@ -119,7 +119,9 @@ body::after {
   100% { transform: translateY(0px); }
 }
 
-/* ========================== */
+/* ==========================
+ TEXT HERO
+========================== */
 
 .hero-title {
   font-size: 42px;
@@ -166,7 +168,7 @@ body::after {
 }
 
 /* ==========================
- CURSOR
+ CURSOR (FIXED + SMOOTH)
 ========================== */
 
 .cursor {
@@ -178,6 +180,11 @@ body::after {
   pointer-events: none;
   box-shadow: 0 0 15px red;
   z-index: 999;
+
+  /* 🔥 FIX: prevents lag/jump + improves tracking */
+  transform: translate3d(0,0,0);
+  will-change: transform;
+  transition: transform 0.05s linear;
 }
 
 /* ==========================
