@@ -89,9 +89,6 @@ This project uses a dual-license structure:
 All branding materials associated with Fruit Stand Productions — including the name, logo, visual identity, and related assets — are not covered under the MIT License.
 View full brand terms here: [BRAND-LICENSE](./BRAND-LICENSE.txt)
 
-
----
-
 ## Code License (MIT)
 
 The code in this repository is licensed under the MIT License.
@@ -103,9 +100,7 @@ You are free to:
 - Reuse in personal or commercial projects
 
 Subject to MIT license terms.
-
----
-
+--
 ## Brand Assets (All Rights Reserved)
 
 The following are NOT covered by the MIT License:
