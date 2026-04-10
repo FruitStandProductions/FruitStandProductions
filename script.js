@@ -2,20 +2,37 @@
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
 let particles = [];
+let particleCount = window.innerWidth < 768 ? 40 : 80;
 
-for (let i = 0; i < 80; i++) {
-  particles.push({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    r: Math.random() * 2,
-    dx: (Math.random() - 0.5) * 1.2,
-    dy: (Math.random() - 0.5) * 1.2
-  });
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 }
+
+window.addEventListener("resize", () => {
+  resizeCanvas();
+});
+
+resizeCanvas();
+
+// create particles
+function initParticles() {
+  particles = [];
+  particleCount = window.innerWidth < 768 ? 40 : 80;
+
+  for (let i = 0; i < particleCount; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 2,
+      dx: (Math.random() - 0.5) * 1.2,
+      dy: (Math.random() - 0.5) * 1.2
+    });
+  }
+}
+
+initParticles();
 
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -38,29 +55,36 @@ function animate() {
 animate();
 
 
-// CURSOR FOLLOW
+// CURSOR (desktop only)
 const cursor = document.querySelector(".cursor");
 
-document.addEventListener("mousemove", e => {
-  cursor.style.top = e.clientY + "px";
-  cursor.style.left = e.clientX + "px";
-});
+if (window.matchMedia("(pointer: fine)").matches) {
+  document.addEventListener("mousemove", e => {
+    cursor.style.top = e.clientY + "px";
+    cursor.style.left = e.clientX + "px";
+  });
+} else {
+  cursor.style.display = "none";
+}
 
 
-// SCROLL REVEAL
+// REVEAL (more stable version)
 const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
-  reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 50) {
-      el.classList.add("active");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
     }
   });
+}, {
+  threshold: 0.1
 });
 
+reveals.forEach(el => observer.observe(el));
 
-// CLICK TRACKING (basic)
+
+// CLICK TRACKING
 document.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => {
     console.log("Clicked:", link.textContent);

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
   animation: gradientMove 10s ease infinite;
 }
 
+/* smoother animation */
 @keyframes gradientMove {
   0% {background-position: 0%;}
   50% {background-position: 100%;}
@@ -24,6 +25,7 @@ body {
 /* PARTICLES */
 #particles {
   position: fixed;
+  inset: 0;
   width: 100%;
   height: 100%;
   z-index: -2;
@@ -32,8 +34,8 @@ body {
 /* CURSOR */
 .cursor {
   position: fixed;
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   background: red;
   border-radius: 50%;
   pointer-events: none;
@@ -41,9 +43,10 @@ body {
   z-index: 999;
 }
 
-/* CONTAINER */
+/* MAIN CONTAINER */
 .container {
-  max-width: 500px;
+  width: 100%;
+  max-width: 520px;
   margin: auto;
   padding: 20px;
 }
@@ -52,7 +55,7 @@ body {
 .profile {
   width: 110px;
   border-radius: 50%;
-  margin: 20px 0;
+  margin: 20px auto;
   border: 3px solid red;
   box-shadow: 0 0 25px red;
   animation: fadeDown 1s ease;
@@ -74,34 +77,35 @@ h1 {
   padding: 20px;
   margin: 20px 0;
   border-radius: 15px;
-
   backdrop-filter: blur(10px);
-
   transition: 0.3s;
 }
 
-/* HOVER GLOW */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 30px rgba(255,0,0,0.6);
 }
 
-/* BUTTONS */
+/* BUTTON BOXES (FIXED) */
 .buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  margin-top: 15px;
 }
 
 .buttons a {
+  display: block;
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-decoration: none;
   color: white;
+  text-align: center;
 
   background: linear-gradient(90deg, #ff1a1a, #800000);
+  border: 1px solid rgba(255, 0, 0, 0.3);
 
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
 .buttons a:hover {
@@ -109,7 +113,7 @@ h1 {
   box-shadow: 0 0 15px red;
 }
 
-/* REVEAL ANIMATION */
+/* REVEAL */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -121,7 +125,7 @@ h1 {
   transform: translateY(0);
 }
 
-/* HEADER ANIM */
+/* ANIM */
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -130,5 +134,20 @@ h1 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* 🔥 MOBILE FIXES */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .cursor {
+    display: none;
   }
 }
