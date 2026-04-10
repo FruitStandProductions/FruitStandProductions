@@ -74,8 +74,9 @@ This is a static-first web project currently in development.
 # 🔐 Licensing & Intellectual Property
 
 This project uses a split licensing model:
+under the MIT License and proprietary license
 
-## Software Code (MIT License)
+See the full license here: [MIT License](LICENSE)
 
 The code in this repository is licensed under the MIT License.
 
