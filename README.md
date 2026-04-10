@@ -2,7 +2,7 @@
 
 # 🍉 Fruit Stand Productions
 
-### A modern digital music label & creative platform
+### A Small digital music label & creative platform
 
 ---
 
