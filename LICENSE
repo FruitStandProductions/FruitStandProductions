@@ -19,10 +19,21 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 ---
-BRANDING & MEDIA RESTRICTION:
-The MIT License above applies only to the source code of this project. 
-All brand assets, including the name "Fruit Stand Productions," logos, 
-visual motifs (fruit/brand imagery), and all audio/music files 
-are NOT covered by this license. All rights to these assets are reserved 
-by Fruit Stand Productions.
+
+BRANDING AND ASSETS NOTICE
+
+This license applies only to the software code contained in this repository
+(including HTML, CSS, JavaScript, and related configuration files).
+
+All brand-related assets are excluded from this license and remain fully
+reserved by Fruit Stand Productions. This includes, but is not limited to:
+
+- The name "Fruit Stand Productions"
+- Logos and visual identity (including fruit-themed branding elements)
+- Artwork, graphics, and design assets
+- Audio files, music, and any related media content
+
+These assets may not be copied, modified, distributed, or reused without
+explicit written permission from Fruit Stand Productions.
