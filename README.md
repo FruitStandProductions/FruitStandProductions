@@ -1,96 +1,82 @@
 <div align="center">
 
-# Fruit Stand Productions
-
-### Digital Music Label • Creative Platform • Experimental Web Project
-
+ 🌐 LIVE PLATFORM
+https://fruitstandproductions.github.io/FruitStandProductions/
 ---
+#  Fruit Stand Productions
 
+### A Digital Music Label & Creative Web Platform
+
+#### Building the future of independent electronic music branding
+---
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-in%20development-orange.svg)
 ![Build](https://img.shields.io/badge/build-static%20v1-green.svg)
 ![Deployment](https://img.shields.io/badge/deployment-active-green.svg)
 ![Type](https://img.shields.io/badge/type-web%20platform-purple.svg)
-
 ---
-
-🚧 Actively in development — evolving from static site → full web platform  
-🎧 Focused on electronic music, visual identity, and digital branding  
-🌐 Live static deployment active (V1)
+🚧 Evolving from static site → structured web platform  
+🎧 Music • Design • Digital Identity  
+🌐 Live V1 deployment active
 
 </div>
-
 ---
-
 # Overview
 
-Fruit Stand Productions is a developing digital music label platform focused on building a scalable web presence for artists, releases, and creative identity.
+Fruit Stand Productions is a digital music label platform in active development, focused on building a modern web presence for electronic music, visual identity, and independent artists.
 
-This repository serves as the foundation for:
-- current live static website
-- experimental design system
-- future full web application
-
----
-
-# ⚙️ Usage & Development
-
-This is a static-first web project currently in production use.
+This repository forms the foundation for:
+- live static website
+- creative brand system
+- future scalable platform features
 
 ---
 
-## Current State
-- Static HTML / CSS / JavaScript website
-- Live deployment active (GitHub Pages or similar)
-- Neon-themed UI with particle animation system
-- Manual updates via Git workflow
+## 🎯 What This Is
+
+A hybrid between:
+- 🎧 Music label
+- 🌐 Creative web platform
+- 🧠 Experimental digital brand system
 
 ---
 
-## Planned Direction
+## Current Focus
 
-- React + Vite migration (V2)
-- Component-based UI architecture
-- CI/CD pipeline (GitHub Actions)
-- Automated deployment system
-- Scalable music/artist content system
-
----
-
-# Architecture (Planned Evolution)
-
-## V1 — Current (Static System)
-- Custom HTML/CSS/JavaScript
-- Static media integration
-- Manual updates
-- Simple deployment workflow
+- Live static website deployment
+- Neon UI + particle animation system
+- Branding + identity development
+- Foundational structure for future expansion
 
 ---
 
-## V2 — In Progress (Modern Web App)
-- React + Vite frontend
-- Modular component system
-- Audio player engine
-- Artist + release management system
-- Structured content architecture
+##  Future Vision
+
+A full creative ecosystem for music and digital content:
+- Artist profiles
+- Music release system
+- Audio player integration
+- Submission + discovery tools
+
+---
+# 📊 Project Status
+
+| Layer | Status |
+|------|--------|
+| Web Platform | Live (V1 Static) |
+| UI System | Active |
+| Deployment | Active |
+| CI/CD | Not configured |
 
 ---
 
-##  V3 — Future Vision
-- Full digital label platform
-- Artist submission system
-- Backend + database integration
-- Automated release pipeline
-- Advanced CI/CD workflows
+#  Roadmap
 
----
-
-# Core Goals
-
-- Build a structured digital music label platform
-- Centralize artists, releases, and creative identity
-- Create a scalable modern web infrastructure
-- Evolve from static site → full web application
+- Stabilize V1 static structure
+- Improve UI consistency
+- Add structured content system
+- Implement deployment automation
+- Expand platform capabilities
 
 ---
 
@@ -104,7 +90,7 @@ See full license file here: [LICENSE](LICENSE)
 
 ---
 
-##  Code License (MIT)
+## Code License (MIT)
 
 The code in this repository is licensed under the MIT License.
 
@@ -132,35 +118,22 @@ The following are NOT covered by the MIT License:
 
 ---
 
-# Project Status
+# 📬 Contact
 
-| Component | Status |
-|----------|--------|
-| Website | Live (static) |
-| CI/CD | Not configured |
-| Versioning | Basic |
-| V2 System | In development |
-| Repository | Active |
+📧 Email: fruitstandproductions1@outlook.com
 
 ---
 
-# Roadmap
+# Built With
 
-- Stabilize V1 static structure
-- Improve UI/UX consistency
-- Begin React + Vite migration
-- Implement GitHub Actions CI/CD
-- Build scalable label platform (V2)
-
----
-
-# Contact
-
-fruitstandproductions1@outlook.com
+- HTML / CSS / JavaScript
+- Custom neon UI system
+- Particle animation engine
+- GitHub Pages deployment
 
 ---
 
-# 📜 License Summary
+# 🧠 Philosophy
 
-- Code: MIT License  
-- Brand Assets: All Rights Reserved
+Minimal infrastructure. Maximum creative control.  
+Built as a foundation for independent music and digital identity.
