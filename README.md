@@ -127,7 +127,7 @@ The following are NOT covered by the MIT License:
 # Built With
 
 - HTML / CSS / JavaScript
-- Custom neon UI system
+- Custom UI system
 - Particle animation engine
 - GitHub Pages deployment
 
