@@ -222,28 +222,33 @@ document.querySelectorAll("a").forEach(link => {
 
 })();
 
+// ==========================
+// 🎧 AUDIO SYSTEM (FIXED)
+// ==========================
+
 const audio = document.getElementById("bgmusic");
 
 if (audio) {
   audio.volume = 0.6;
 
-  // Try autoplay
-  const playPromise = audio.play();
+  const startAudio = () => {
+    audio.play().catch(() => {});
+    console.log("🟢 Audio started via user interaction");
 
-  if (playPromise !== undefined) {
-    playPromise.catch(() => {
-      // Fallback: start on first interaction
-      const startAudio = () => {
-        audio.play();
-        document.removeEventListener("click", startAudio);
-        document.removeEventListener("touchstart", startAudio);
-        document.removeEventListener("keydown", startAudio);
-      };
+    document.removeEventListener("click", startAudio);
+    document.removeEventListener("keydown", startAudio);
+    document.removeEventListener("touchstart", startAudio);
+  };
+
+  const tryAutoplay = () => {
+    audio.play().catch(() => {
+      console.log("⛔ Autoplay blocked — waiting for interaction");
 
       document.addEventListener("click", startAudio);
-      document.addEventListener("touchstart", startAudio);
       document.addEventListener("keydown", startAudio);
+      document.addEventListener("touchstart", startAudio);
     });
-  }
-}
+  };
 
+  tryAutoplay();
+}
