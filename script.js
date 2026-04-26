@@ -221,3 +221,29 @@ document.querySelectorAll("a").forEach(link => {
   updateUI();
 
 })();
+
+const audio = document.getElementById("bgmusic");
+
+if (audio) {
+  audio.volume = 0.6;
+
+  // Try autoplay
+  const playPromise = audio.play();
+
+  if (playPromise !== undefined) {
+    playPromise.catch(() => {
+      // Fallback: start on first interaction
+      const startAudio = () => {
+        audio.play();
+        document.removeEventListener("click", startAudio);
+        document.removeEventListener("touchstart", startAudio);
+        document.removeEventListener("keydown", startAudio);
+      };
+
+      document.addEventListener("click", startAudio);
+      document.addEventListener("touchstart", startAudio);
+      document.addEventListener("keydown", startAudio);
+    });
+  }
+}
+
