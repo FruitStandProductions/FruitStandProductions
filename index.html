@@ -1,152 +1,201 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Stand Productions | We've Moved</title>
+  <meta name="description" content="Fruit Stand Productions has moved to a new website. Visit the new home of FSP.">
+  <meta name="robots" content="index, follow">
 
-<title>Fruit Stand Productions | Independent Electronic Music Label (Project by SOBERMELON)</title>
+  <link rel="canonical" href="https://fruitstandproductions.pages.dev/">
+  <link rel="icon" href="assets/favicon_io/favicon.ico">
 
-<meta name="description" content="Fruit Stand Productions is an independent electronic music label and artist project by SOBERMELON. Listen on Spotify and explore experimental synth music.">
+  <meta property="og:title" content="Fruit Stand Productions — We've Moved">
+  <meta property="og:description" content="Fruit Stand Productions has a new home.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fruitstandproductions.github.io/FruitStandProductions/">
+  <meta property="og:image" content="https://fruitstandproductions.github.io/FruitStandProductions/assets/favicon_io/android-chrome-512x512.png">
 
-<meta name="keywords" content="Fruit Stand Productions, SOBERMELON, electronic music artist, music producer Canada, synth music, indie label">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-<meta name="robots" content="index, follow">
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      color: white;
+      text-align: center;
+      background: linear-gradient(135deg, #1a0000, #3b0000, #6b0000);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite,
+                 softPulse 8s ease-in-out infinite;
+    }
 
-<link rel="canonical" href="https://fruitstandproductions.github.io/FruitStandProductions/">
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at center,
+        transparent 40%, rgba(0,0,0,0.5));
+    }
 
-<!-- GOOGLE VERIFICATION -->
-<meta name="google-site-verification" content="google0d6d98f35d44df87" />
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,0,0,0.08), transparent 40%),
+        radial-gradient(circle at 80% 60%, rgba(255,0,0,0.06), transparent 45%);
+      filter: blur(60px);
+      opacity: 0.65;
+      animation: fogMove 25s ease-in-out infinite;
+    }
 
-<!-- OPEN GRAPH -->
-<meta property="og:title" content="Fruit Stand Productions">
-<meta property="og:description" content="Electronic music label and creative platform.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://fruitstandproductions.github.io/FruitStandProductions/">
-<meta property="og:image" content="https://fruitstandproductions.github.io/FruitStandProductions/assets/favicon_io/android-chrome-512x512.png">
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 
-<!-- PWA -->
-<link rel="manifest" href="manifest.json">
+    @keyframes softPulse {
+      0% { filter: brightness(1); }
+      50% { filter: brightness(1.05); }
+      100% { filter: brightness(1); }
+    }
 
-<!-- STRUCTURED DATA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": ["MusicGroup", "Organization"],
-  "name": "Fruit Stand Productions",
-  "alternateName": "SOBERMELON",
-  "url": "https://fruitstandproductions.github.io/FruitStandProductions/",
-  "genre": "Electronic",
-  "sameAs": [
-    "https://open.spotify.com/artist/1SRDDwceqkcskR78t6tiPy",
-    "https://www.youtube.com/@SOBERMELON",
-    "https://soundcloud.com/SOBERMELON",
-    "https://www.instagram.com/FruitStandProductions"
-  ]
-}
-</script>
+    @keyframes fogMove {
+      0% { transform: translate(0,0); }
+      50% { transform: translate(25px,-15px); }
+      100% { transform: translate(0,0); }
+    }
 
-<link rel="icon" href="assets/favicon_io/favicon.ico">
-<link rel="stylesheet" href="style.css">
+    .card {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 620px;
+      padding: 48px 32px;
+      background: rgba(10,0,0,0.55);
+      border: 1px solid rgba(255,0,0,0.3);
+      border-radius: 22px;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 0 50px rgba(0,0,0,0.25);
+    }
 
+    .logo {
+      width: 112px;
+      height: 112px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(255,0,0,0.6);
+      box-shadow: 0 0 30px rgba(255,0,0,0.4);
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      opacity: 0.65;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(26px, 6vw, 40px);
+      letter-spacing: 3px;
+      line-height: 1.2;
+      text-shadow: 0 0 30px rgba(255,0,0,0.6);
+    }
+
+    .message {
+      margin: 22px auto 30px;
+      max-width: 440px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.8);
+      font-size: 15px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 26px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      background: linear-gradient(135deg, #ff1a1a, #4d0000);
+      border: 1px solid rgba(255,100,100,0.3);
+      transition: 0.25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(255,0,0,0.4);
+    }
+
+    .footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 11px;
+      letter-spacing: 1px;
+      opacity: 0.45;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 38px 22px; }
+      .logo { width: 90px; height: 90px; }
+      h1 { letter-spacing: 2px; }
+    }
+  </style>
 </head>
 
 <body>
+  <main class="card">
 
-  <audio id="bgmusic" loop>
-  <source src="Audio/shortclip-background-music.mp3" type="audio/mpeg">
-</audio>
+    <img
+      src="assets/Fspprofile.JPG"
+      class="logo"
+      alt="Fruit Stand Productions logo"
+    >
 
+    <p class="eyebrow">Fruit Stand Productions</p>
 
+    <h1>WE'VE MOVED.</h1>
 
-<!--  HIDDEN SEO BOOST -->
-<p style="display:none;">
-fruit stand productions sobermelon electronic music label canada synth producer spotify artist official website
-</p>
+    <p class="message">
+      Fruit Stand Productions has a new home.
+      The website has been rebuilt and expanded into a
+      new creative platform for music, original productions,
+      interactive projects and more.
+      <br><br>
+      This old address is being retired.
+      You'll find everything at the new website.
+    </p>
 
-<!--  BACKGROUND -->
-<canvas id="particles"></canvas>
+    <a
+      class="button"
+      href="https://fruitstandproductions.pages.dev/"
+    >
+      VISIT THE NEW WEBSITE →
+    </a>
 
-<!--  HERO -->
-<section class="hero">
+    <div class="footer">
+      FRUIT STAND PRODUCTIONS · NEW HOME, SAME FRUIT.
+    </div>
 
-  <!--  LOGO ADDED BACK -->
-  <img src="assets/Fspprofile.JPG" class="hero-logo" alt="Fruit Stand Productions logo">
-
- <h1 class="hero-title">FRUIT STAND PRODUCTIONS</h1>
-
-<p class="hero-sub">
-  Independent Electronic Music Label • Project by SOBERMELON
-</p>
-
-<p class="hero-note">
-  Background music produced by SOBERMELON
-</p>
-
-  <div class="scroll-indicator">↓</div>
-
-</section>
-
-<!-- MAIN -->
-<div class="container">
-
-<section class="card reveal">
-  <h2>Featured </h2>
-  
-  <div class="buttons">
-    <a href="https://music.apple.com/us/album/voltage-mind/1889261843?i=1889261845" target="_blank">Apple Music</a>
-    <a href="https://open.spotify.com/artist/1SRDDwceqkcskR78t6tiPy" target="_blank">Spotify</a>
-    <a class="disabled">Featured Sample Pack (shutdown currently)</a>
-    <a class="disabled">NEW ALL ORIGINAL SHOW TFTF (coming soon)</a>
-
-  </div>
-</section>
-
-<section class="card reveal">
-  <h2>Label Services   (Coming Soon)</h2>
-
-  <p>
-  
-    
-  </p>
-
-  <div class="buttons">
-    <!-- <a href="services.html">Services</a> -->
-  </div>
-</section>
-
-<section class="card reveal">
-  <h2>Connect</h2>
-  <div class="buttons">
-    <a href="https://soundcloud.com/SOBERMELON" target="_blank">SoundCloud</a>
-    <a href="https://www.instagram.com/FruitStandProductions" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@sobermelon0" target="_blank">TikTok</a>
-    <a href="https://www.youtube.com/@SOBERMELON" target="_blank">YouTube</a>
-    <a class="disabled">FruitStand Sample Shop (shutdown currently)</a>
-    <a href="mailto:fruitstandproductions1@outlook.com?subject=Music or Business Inquiry&body=Hi,I’m reaching out regarding a collaboration or inquiry about Fruit Stand Productions....">
-  Business Email
-</a>
-  </div>
-</section>
-
-<section class="card reveal">
-  <h2>Latest Update</h2>
-  <p>
-    Fruit Stand Productions is here somewhere doing something .....or not who knows.....
-     Posted as of Sept 19 2026, makin stuff in daw, got new midi controller, things are goin...
-     nov 14, new website rebuild coming soon, new all orignal show TFTF by fruitstandproductions more details soon.
-  </p>
-</section>
-
-<section class="card reveal">
-  <h2>About</h2>
-  <p>
-    Fruit Stand Productions is an independent electronic music label creative project, I make things sometimes.
-  </p>
-</section>
-
-</div>
-
-<script src="script.js"></script>
+  </main>
 </body>
 </html>
